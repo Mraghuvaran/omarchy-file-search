@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "mraghuvaran.file-search",
+  "name": "File Search",
+  "version": "1.0.0",
+  "author": "Mraghuvaran",
+  "description": "Semantic search over your home directory: describe what you're looking for and matching text files, images, and videos appear ranked by meaning. Runs entirely locally with EmbeddingGemma 2 embeddings via Ollama.",
+  "homepage": "https://github.com/Mraghuvaran/omarchy-file-search",
+  "license": "MIT",
+  "kinds": ["panel"],
+  "entryPoints": {
+    "panel": "Panel.qml"
+  },
+  "keepLoaded": true
+}
