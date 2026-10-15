@@ -239,7 +239,7 @@ Item {
   OverlayWindow {
     id: panel
     shown: root.opened
-    WlrLayershell.namespace: "tictac-file-search"
+    WlrLayershell.namespace: "mraghuvaran-file-search"
 
     // Scrim fades with the card.
     Rectangle {
