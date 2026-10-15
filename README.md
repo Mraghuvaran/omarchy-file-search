@@ -9,6 +9,10 @@ Semantic search over your own files for Omarchy. Press a key, describe what you'
 
 Everything lives in a single 768-dimensional embedding space, so one query searches all of it. "Sunset over the ocean" can match a photo; "how my monitors are configured" matches your `monitors.lua`.
 
+![File Search in action](preview.gif)
+
+Results stream in as you type, and the selected hit gets a live preview — the full image for media, an excerpt of the file itself for documents.
+
 ## Requirements
 
 - Omarchy (Quattro shell) with Ollama running locally
@@ -48,10 +52,10 @@ Hyprland reloads the file on save. Optionally you can also add it to the Omarchy
 ## Usage
 
 - **Open the panel**: your keybinding (above) or `tools/file-search.sh`
-- Type a description of the file you want, not its name — "budget spreadsheet for the kitchen renovation", "screenshot of the theme setup"
-- **Arrow keys** navigate, **Enter** opens the file (text files open in your editor, images and videos in your default viewer), **Esc** closes
-- Each row shows the file's location and, for text files, a one-line content preview. Image results render a live thumbnail
-- Percentages are confidence relative to the best match in this search
+- **Start typing** — describe the file, not its name: "budget spreadsheet for the kitchen renovation", "screenshot of the theme setup". Results update live as you type, and in-flight searches are cancelled as you keep going
+- **Arrow keys** navigate; the right side shows a preview of the selection: the actual image for media, a live excerpt for documents, plus the full path and size
+- **Enter** opens the file (text files open in your editor, images and videos in your default viewer). **Esc** clears the query, then closes
+- Percentages are confidence relative to the best match in this search; image rows carry a thumbnail and text rows a one-line snippet
 
 From a terminal:
 
